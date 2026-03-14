@@ -39,7 +39,7 @@ class EmbeddingStore:
             batch = chunks[start:start + batch_size]
             ids = [chunk.chunk_id for chunk in batch]
             docs = [chunk.text for chunk in batch]
-            metadata = [self._normalize_metadata(chunk.metadtaa) for chunk in batch]
+            metadata = [self._normalize_metadata(chunk.metadata) for chunk in batch]
             embeddings = self.embed_texts(docs)
 
             self.collection.upsert(

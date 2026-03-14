@@ -38,11 +38,11 @@ def make_doc_id(*parts: str) -> str:  # This is called argument unpacking / vari
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
 
 
-def write_jsonl(path: Path, records: Iterable[DocumentRecord]) -> None:
+def write_jsonl(path: Path, records: Iterable[ModelT]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         for record in records:
-            f.write(json.dumps(record.model_dump(), ensure_ascii=False))
+            f.write(json.dumps(record.model_dump(), ensure_ascii=False)+ "\n")
 
 
 def read_jsonl(path: Path, model_cls: type[ModelT]) -> list[ModelT]:

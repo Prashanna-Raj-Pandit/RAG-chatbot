@@ -20,7 +20,7 @@ def phase1_ingestion() -> dict[str, Any]:
         "stage": "Phase 1-Ingestion",
         "output_path": str(config.phase1_document_path),
         "total_records": len(all_records),
-        "pdf_records": pdf_records,
+        # "pdf_records": pdf_records,
     }
 
 

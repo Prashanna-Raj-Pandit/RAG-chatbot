@@ -41,9 +41,3 @@ class PDFIngestor:
         return all_records
 
 
-# if __name__ == "__main__":
-#     read_pdf=PDFIngestor()
-#     path=Path("./data/")
-#     records=read_pdf.ingest_directory(path)
-#     print(records)
-

@@ -15,8 +15,8 @@ class EmbeddingStore:
         self.model = SentenceTransformer(config.embedding_model_name)
         # self.client = chromadb.PersistentClient(path=str(config.chroma_dir))
         self.client = chromadb.CloudClient(
-            api_key='ck-H429P89APX6LandziTabFDwKq75SmE5ZBe2UdKjXGhtZ',
-            tenant='21c0846a-bb0c-4d54-bc30-a75aee1b1a41',
+            api_key='CHROMA_API_KAY',
+            tenant='CHROMA_TENANT',
             database='DocuChat'
         )
         self.collection: Collection = self.client.get_or_create_collection(

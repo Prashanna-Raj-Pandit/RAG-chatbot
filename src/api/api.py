@@ -15,7 +15,14 @@ STATIC_DIR = Path(__file__).parents[2] / "static"
 app = FastAPI(title="RAG Chatbot")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
-chat_bot = RetrievalChatCLI()
+_chat_bot = None
+
+
+def get_chat_bot() -> RetrievalChatCLI:
+    global _chat_bot
+    if _chat_bot is None:
+        _chat_bot = RetrievalChatCLI()
+    return _chat_bot
 
 
 class ChatRequest(BaseModel):
@@ -42,7 +49,7 @@ def serve_ui():
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
-    answer, evidence_items = chat_bot.communicate_api(req.message)
+    answer, evidence_items = get_chat_bot().communicate_api(req.message)
 
     evidence_for_ui = [
         EvidenceItem(

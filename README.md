@@ -4,7 +4,7 @@
 
 <br/>
 
-<a href="https://git.io/typing-svg">
+<a href="https://docu-chat.vercel.app/">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=800&color=00FFE0&center=true&vCenter=true&multiline=true&width=600&height=60&lines=Voice+and+Text+RAG+Chatbot;FastAPI+%7C+ChromaDB+%7C+Whisper+%7C+Cohere;Grounded+answers+from+your+documents" alt="Typing SVG" />
 </a>
 
@@ -19,6 +19,15 @@
 </div>
 
 ---
+
+## [Explore catalog](!https://docu-chat.vercel.app/catalog)
+
+<img src="images/landing.png"></img>
+<img src="images/legal.png"></img>
+<img src="images/retail.png"></img>
+<img src="images/support.png"></img>
+<img src="images/docuchat.png"></img>
+<img src="images/docuchat1.png"></img>
 
 ## Overview
 

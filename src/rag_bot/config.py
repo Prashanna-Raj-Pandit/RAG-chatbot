@@ -25,6 +25,10 @@ class Config:
 
     chroma_dir: Path = ROOT / "data/chroma_db"
 
+    chroma_api_key: str = os.getenv("CHROMA_API_KEY", "")
+    chroma_tenant: str = os.getenv("CHROMA_TENANT", "")
+    chroma_database: str = os.getenv("CHROMA_DATABASE", "DocuChat")
+
     phase3_output_dir: Path = ROOT / "output"
 
     top_k_results: int = int(os.getenv("TOP_K_RESULTS", "12"))

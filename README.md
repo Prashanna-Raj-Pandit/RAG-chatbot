@@ -21,7 +21,7 @@
 ---
 
 ### [Explore catalog](!https://docu-chat.vercel.app/catalog) (https://docu-chat.vercel.app/catalog)
-### [ChatBot](!https://docu-chat.vercel.app/catalog) (https://docu-chat.vercel.app/catalog)
+### [ChatBot](!https://docu-chat.vercel.app/) (https://docu-chat.vercel.app/)
 
 <img src="images/landing.png"></img>
 <img src="images/legal.png"></img>
